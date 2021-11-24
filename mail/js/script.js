@@ -7,15 +7,20 @@ const user_mail = prompt("inserisci la tua email");
 
 const lista_utenti = ["baltazar@yahoo.it" , "gianfilippo@yahoo.it", "romualdo@yahoo.it" , "gerry@yahoo.it"];
 
+convalida = false; 
 
-for(i = 0; i < lista_utenti.length; i++) {
+for(i = 0; i < lista_utenti.length; i++) { 
+
     if (user_mail == lista_utenti[i]) {
-        console.log("sei nella lista");   
-
-}   else if (user_mail != lista_utenti[i]) {
-        console.log("non sei nella lista");
+       convalida = true;
+       document.writeln ("sei sulla lista");
     }
 }
+
+    if (convalida == false) {
+        document.writeln("non sei sulla lista");
+    } 
+
 
 
 
