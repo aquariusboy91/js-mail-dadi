@@ -15,10 +15,10 @@ let rand_pc = Math.floor(Math.random() * 7);
 container.innerHTML += (`<h1>Il numero del pc: ${rand_pc}<\h1>`);
 
 if (rand_player < rand_pc) {
-     cont_result.innerHTML = `<h1>Ha vinto il pc<\h1>`;
+     cont_result.innerHTML = `<h1>Hai perso<\h1>`;
     
 } else if (rand_player > rand_pc){
-    cont_result.innerHTML = `<h1>Ha vinto il player<\h1>`;
+    cont_result.innerHTML = `<h1>Hai vinto<\h1>`;
 } else {
     cont_result.innerHTML = `<h1>Parità<\h1>`;
 }
