@@ -13,13 +13,14 @@ for(i = 0; i < lista_utenti.length; i++) {
 
     if (user_mail == lista_utenti[i]) {
        convalida = true;
-       document.writeln ("sei sulla lista");
     }
 }
 
     if (convalida == false) {
-        document.writeln("non sei sulla lista");
-    } 
+        document.writeln("Accesso negato");
+    } else if (convalida == true) {
+        document.writeln ("sei sulla lista, puoi accedere");
+    }
 
 
 
