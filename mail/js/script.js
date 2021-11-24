@@ -6,8 +6,6 @@
 const user_mail = prompt("inserisci la tua email");
 
 const lista_utenti = ["baltazar@yahoo.it" , "gianfilippo@yahoo.it", "romualdo@yahoo.it" , "gerry@yahoo.it"];
-console.log (lista_utenti);
-
 
 
 for(i = 0; i < lista_utenti.length; i++) {
@@ -15,7 +13,7 @@ for(i = 0; i < lista_utenti.length; i++) {
         console.log("sei nella lista");   
 
 }   else if (user_mail != lista_utenti[i]) {
-            console.log("non sei nella lista");
+        console.log("non sei nella lista");
     }
 }
 
